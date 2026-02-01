@@ -31,4 +31,5 @@ Tasks are stored in localStorage so data persists after page refresh.
 
 ## Hooks Used
 - useState
+- useEffect
 
