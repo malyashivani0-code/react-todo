@@ -39,7 +39,7 @@ function Task() {
       )}
 
       {todos.map((todo, index) => (
-        <div key={index} className='flex items-start mb-3 gap-3'>
+        <div key={index} className='flex items-center mb-3 gap-4'>
           <ul
             onClick={() => toggleTodo(index)}
             className='flex gap-2 flex-1 min-w-0 cursor-pointer'
@@ -78,3 +78,4 @@ function Task() {
 }
 
 export default Task;
+
