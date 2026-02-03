@@ -42,9 +42,9 @@ function Task() {
         <div key={index} className='flex items-center mb-3 gap-4'>
           <ul
            
-            className='flex gap-2 flex-1 min-w-0 cursor-pointer'
+            className='flex gap-2 flex-1 min-w-0 '
           >
-            <span  onClick={() => toggleTodo(index)} className='flex justify-center items-center shrink-0'>
+            <span  onClick={() => toggleTodo(index)} className='flex justify-center items-center cursor-pointer shrink-0'>
               {todo.completed ? (
                 <img  src="/check.png" />
               ) : (
@@ -78,3 +78,4 @@ function Task() {
 }
 
 export default Task;
+
