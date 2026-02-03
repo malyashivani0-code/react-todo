@@ -41,10 +41,10 @@ function Task() {
       {todos.map((todo, index) => (
         <div key={index} className='flex items-center mb-3 gap-4'>
           <ul
-            onClick={() => toggleTodo(index)}
+           
             className='flex gap-2 flex-1 min-w-0 cursor-pointer'
           >
-            <span className='flex justify-center items-center shrink-0'>
+            <span  onClick={() => toggleTodo(index)} className='flex justify-center items-center shrink-0'>
               {todo.completed ? (
                 <img  src="/check.png" />
               ) : (
@@ -78,4 +78,3 @@ function Task() {
 }
 
 export default Task;
-
